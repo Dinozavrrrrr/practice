@@ -1,0 +1,923 @@
+/* Основные стили */
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden
+}
+
+/* Стили для меню */
+/* Общие стили */
+.menu-toggler {
+    display: none; /* Скрываем кнопку на больших экранах */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-toggler-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.menu-toggler-icon::before,
+.menu-toggler-icon::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+}
+
+.menu-toggler-icon::before {
+    top: -8px;
+}
+
+.menu-toggler-icon::after {
+    top: 8px;
+}
+
+.menu-collapse {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: stretch; /* Растягиваем элементы по ширине */
+    background-color: #479124; /* Цвет фона меню */
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 10px; /* Убираем отступы вокруг меню */
+    margin-right: 20px;
+}
+
+.menu-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.menu-link {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    display: block; /* Делаем ссылку блочным элементом */
+    width: 100%;
+}
+
+.menu-link:hover {
+    background-color: #53ac2a;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .menu-toggler {
+        display: block;
+    }
+
+    .menu-collapse {
+        display: none; /* Скрываем меню по умолчанию */
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        background-color: #479124;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .menu-collapse.active {
+        display: flex; /* Показываем меню при активации */
+    }
+
+    .menu-item {
+        margin: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .menu-toggler {
+        margin: 10px;
+    }
+
+    .menu-collapse {
+        padding: 16px;
+    }
+
+    .menu-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        margin: 12px 0;
+    }
+
+    .menu-link {
+        padding: 12px 24px;
+        font-size: 16px; /* Увеличиваем размер текста для удобства */
+    }
+}
+
+/* Стили для логотипа */
+.logo {
+    width: 15%; /* Размер логотипа */
+    height: auto;
+}
+
+/* Стили для текста "DINO" */
+.Irish-Grover {
+    font-family: 'Irish Grover', cursive;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Стили для заголовков */
+.just-text {
+    font-family: 'Bitter', serif;
+    font-weight: bolder;
+    font-size: 5.5rem; /* Адаптивный размер */
+    line-height: 1.2;
+}
+
+/* Стили для текста "Моя небольшая визитка" */
+.text-sudo-var {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+    font-size: 1.5rem; /* Адаптивный размер */
+}
+
+/* Стили для основного контента */
+.container-fluid {
+    padding: 2rem; /* Отступы внутри контейнера */
+}
+
+.row {
+    margin: 0; /* Убираем лишние отступы */
+}
+
+.col-md-7, .col-md-5 {
+    padding: 1rem; /* Внутренние отступы для колонок */
+}
+
+/* Стили для изображения */
+.img-fluid {
+    max-width: 100%; /* Изображение не выходит за пределы контейнера */
+    height: auto; /* Сохраняем пропорции */
+}
+
+/* Стили для футера */
+footer {
+    background-color: #333333; /* Темно-серый фон */
+    color: white; /* Белый текст */
+    text-align: center; /* Центрирование текста */
+    font-size: 1rem; /* Размер текста */
+    padding: 1rem; /* Внутренние отступы */
+}
+
+/* Адаптивные стили для маленьких экранов */
+@media (max-aspect-ratio: 9/16) {
+
+    .text-sudo-var {
+        font-size: 1.2rem; /* Уменьшаем размер текста "Моя небольшая визитка" */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0.75rem; /* Уменьшаем отступы для кнопок меню */
+        font-size: 0.9rem; /* Уменьшаем размер текста */
+    }
+
+    .custom-title {
+        font-size: 36px;
+    }
+    .custom-subtitle {
+        font-size: 28px;
+    }
+    .custom-icon {
+        font-size: 28px;
+    }
+}
+
+.my-bg-color-green {
+    background-color: #479124;
+}
+
+/* Увеличение размера шара */
+.sphere-image {
+
+    display: block;
+}
+
+/* Позиционирование новых изображений */
+.new-image-left img {
+    width: 35%; /* Размер изображения */
+    margin-top: 250px;
+}
+
+.new-image-right img {
+    width: 40%; /* Размер изображения */
+    display: block;
+}
+
+.my-text-over {
+    position: absolute;
+    top: 35%; /* Позиционируем по центру по вертикали */
+    transform: translateY(-50%);
+    left: 50px; /* Сдвигаем текст влево, чтобы он "наезжал" на картинку */
+    z-index: 2; /* Убедитесь, что текст выше картинки */
+    padding-right: 50px;
+    border-radius: 5px;
+}
+
+
+.clown-pepe {
+    max-width: 50%; /* Максимальная ширина изображения */
+    height: auto;
+}
+
+.about-text {
+    font-family: 'Bitter', serif;
+    font-weight: bolder;
+    font-size: 5.5rem; /* Адаптивный размер */
+    line-height: 1.2;
+}
+
+.custom-bg {
+    background-color: #000;
+}
+.custom-text {
+    color: #fff;
+}
+.custom-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.custom-subtitle {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.custom-image-container {
+    text-align: center;
+    margin-top: 50px;
+}
+.custom-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.chart-container {
+    background-color: #000;
+    border: 4px solid #fff;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 70vh; /* Высота контейнера зависит от размера экрана */
+    
+}
+
+/* Стили для каждого столбца */
+.bar {
+    width: 7vw; /* Ширина столбцов зависит от ширины экрана */
+    margin: 0 2vw; /* Отступы между столбцами */
+    background-color: #2e8b57; /* Зеленый цвет */
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Разные высоты для столбцов */
+.bar-1 { height: 55vh; background-color: #81A416;}
+.bar-2 { height: 35vh; background-color: #08652C;}
+.bar-3 { height: 60vh; background-color: #032820;}
+.bar-4 { height: 50vh; background-color: #81A416;}
+.bar-5 { height: 50vh; background-color: #08652C;}
+
+/* Стили для подписей под столбцами */
+.label {
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Добавление тени для эффекта глубины */
+.bar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-aspect-ratio: 9/16) {
+    .bar {
+        width: 20vw; /* Увеличиваем ширину столбцов на маленьких экранах */
+        margin: 0 5vw; /* Увеличиваем отступы */
+    }
+
+    .label {
+        font-size: 0.8rem; /* Уменьшаем размер шрифта */
+    }
+
+    .chart-container {
+        flex-direction: column; /* Располагаем столбцы вертикально */
+        align-items: center; /* Центрируем элементы по центру */
+        height: auto; /* Автоматическая высота */
+        padding: 10px;
+    }
+
+    /* Высоты столбцов для мобильных устройств */
+    .bar-1 { height: 15vh; }
+    .bar-2 { height: 8vh; }
+    .bar-3 { height: 20vh; }
+    .bar-4 { height: 12vh; }
+    .bar-5 { height: 15vh; }
+}
+
+/* Стили для контейнера */
+.subject-container {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto; /* Центрирование контейнера */
+    max-width: 600px; /* Максимальная ширина для больших экранов */
+}
+
+/* Стили для заголовка */
+.subject-title {
+    font-size: clamp(1.2rem, 3vw, 1.5rem); /* Адаптивный размер шрифта */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Стили для списка */
+.subject-list {
+    list-style-type: none; /* Убираем стандартные маркеры */
+    padding-left: 0; /* Убираем отступ слева */
+}
+
+/* Стили для пунктов списка */
+.subject-item {
+    margin-bottom: clamp(5px, 1vw, 10px); /* Адаптивный отступ между пунктами */
+    font-size: clamp(1rem, 2vw, 1.2rem); /* Адаптивный размер шрифта */
+}
+
+/* Стили для иконки звездочки */
+.star-icon {
+    color: #d4af37; /* Цвет золотой звездочки */
+    margin-right: clamp(5px, 1vw, 10px); /* Адаптивный отступ справа */
+    font-size: clamp(1rem, 2vw, 1.5rem); /* Адаптивный размер иконки */
+}
+
+.w-5 {
+    width: 5% !important;
+}
+
+.w-10 {
+    width: 10% !important;
+}
+
+.text-Sofia-Sans-Condensed {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.bg-rectangle {
+    background-image: url(img/Rectangle\ 15.png);
+    background-size: cover; /* Растягиваем изображение на всю ширину и высоту */
+    background-repeat: no-repeat; /* Отключаем повторение изображения */
+}
+
+@media (max-aspect-ratio: 9/16) {
+    .bg-rectangle {
+        background: transparent;
+    }
+    
+}
+/* Кастомные классы */
+.partfol-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.partfol-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.2s;
+}
+
+.partfol-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: rgba(0,0,0,0.5);
+    border-radius: 0 0 12px 12px;
+}
+
+.partfol-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.partfol-text {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+}
+
+.border-white {
+    border: 3px solid white; /* Белая рамка шириной 5px */
+    border-radius: 12px;      /* Опционально: скругление углов */
+}
+
+.w-65 {
+    width: 65% !important;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center; /* Выравнивание по горизонтали */
+    align-items: center;     /* Выравнивание по вертикали */
+    text-align: center;      /* Дополнительное выравнивание текста внутри элементов */
+    height: 100%;            /* Убедитесь, что контейнер занимает всю доступную высоту */
+}
+
+.w-85 {
+    width: 85% !important;
+}
+
+.rotated-text {
+    transform: rotate(45deg);
+}
+
+.w-20 {
+    width: 20% !important;
+}
+
+/* Основной контейнер */
+.con-container {
+    border: 12px solid #18AC22;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    max-width: 1200px; /* Фиксированная ширина */
+    margin: 0 auto; /* Центрирование контейнера */
+}
+
+/* Карты сервисов */
+.con-card {
+    background-color: #000;
+    color: white;
+    padding: 20px; /* Увеличенные отступы */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px; /* Увеличенное расстояние между элементами */
+    border-radius: 15px;
+    min-height: 120px; /* Минимальная высота карточки */
+}
+
+/* Логотипы сервисов */
+.con-card img {
+    width: 60px; /* Увеличенный размер изображения */
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Название сервиса */
+.con-service-name {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Дополнительный текст */
+.con-subtext {
+    font-size: 16px;
+    opacity: 0.7;
+    margin: 0;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-aspect-ratio: 9/16) {
+    .con-container {
+        max-width: 100%;
+        padding: 5px;
+    }
+    .con-card {
+        flex-direction: column;
+        gap: 10px;
+        min-height: 100px; /* Уменьшенная минимальная высота карточки */
+    }
+    .con-service-name {
+        font-size: 18px;
+    }
+    .con-subtext {
+        font-size: 12px;
+    }
+    .con-card img {
+        width: 40px; /* Уменьшенный размер изображения на мобильных устройствах */
+        height: 40px;
+    }
+}
+
+.steam-gradinet {
+    /* Первый градиент */
+    position: relative;
+    background: linear-gradient(90deg, #479124, #000000, #000000);
+    overflow: hidden; /* Обрезаем лишнее */
+}
+
+/* Второй градиент (псевдоэлемент) */
+.steam-gradinet::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #000000, #000000, #479124);
+  
+    /* Начальная прозрачность */
+    opacity: 0;
+  
+    /* Плавный переход */
+    transition: opacity 0.6s ease-in-out;
+    z-index: 1;
+  }
+  
+  /* Анимация при наведении */
+  .steam-gradinet:hover::before {
+    opacity: 1; /* Полная видимость второго градиента */
+  }
+
+.EGS-gradinet {
+    /* Первый градиент */
+    position: relative;
+    background: linear-gradient(90deg, #15a456, #000000, #000000);
+    overflow: hidden; /* Обрезаем лишнее */
+}
+
+/* Второй градиент (псевдоэлемент) */
+.EGS-gradinet::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #000000, #000000, #15a456);
+  
+    /* Начальная прозрачность */
+    opacity: 0;
+  
+    /* Плавный переход */
+    transition: opacity 0.6s ease-in-out;
+    z-index: 1;
+  }
+  
+  /* Анимация при наведении */
+  .EGS-gradinet:hover::before {
+    opacity: 1; /* Полная видимость второго градиента */
+  }
+
+.TG-gradinet {
+    /* Первый градиент */
+    position: relative;
+    background: linear-gradient(90deg, #60b82a, #000000, #000000);
+    overflow: hidden; /* Обрезаем лишнее */
+}
+
+/* Второй градиент (псевдоэлемент) */
+.TG-gradinet::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #000000, #000000, #60b82a);
+  
+    /* Начальная прозрачность */
+    opacity: 0;
+  
+    /* Плавный переход */
+    transition: opacity 0.6s ease-in-out;
+    z-index: 1;
+  }
+  
+  /* Анимация при наведении */
+  .TG-gradinet:hover::before {
+    opacity: 1; /* Полная видимость второго градиента */
+  }
+
+.Discord-gradinet {
+    /* Первый градиент */
+    position: relative;
+    background: linear-gradient(90deg, #000000, #000000, #00df56);
+    overflow: hidden; /* Обрезаем лишнее */
+}
+
+/* Второй градиент (псевдоэлемент) */
+.Discord-gradinet::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #00df56, #000000, #000000);
+  
+    /* Начальная прозрачность */
+    opacity: 0;
+  
+    /* Плавный переход */
+    transition: opacity 0.6s ease-in-out;
+    z-index: 1;
+  }
+  
+  /* Анимация при наведении */
+  .Discord-gradinet:hover::before {
+    opacity: 1; /* Полная видимость второго градиента */
+  }
+
+
+.VK-gradinet {
+    /* Первый градиент */
+    position: relative;
+    background: linear-gradient(90deg, #000000, #000000, #09ce09);
+    overflow: hidden; /* Обрезаем лишнее */
+}
+
+/* Второй градиент (псевдоэлемент) */
+.VK-gradinet::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #09ce09, #000000, #000000);
+  
+    /* Начальная прозрачность */
+    opacity: 0;
+  
+    /* Плавный переход */
+    transition: opacity 0.6s ease-in-out;
+    z-index: 1;
+  }
+  
+  /* Анимация при наведении */
+  .VK-gradinet:hover::before {
+    opacity: 1; /* Полная видимость второго градиента */
+  }
+
+.Gmail-gradinet {
+    /* Первый градиент */
+    position: relative;
+    background: linear-gradient(90deg, #000000, #000000, #3eda48);
+    overflow: hidden; /* Обрезаем лишнее */
+}
+
+/* Второй градиент (псевдоэлемент) */
+.Gmail-gradinet::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #3eda48, #000000, #000000);
+  
+    /* Начальная прозрачность */
+    opacity: 0;
+  
+    /* Плавный переход */
+    transition: opacity 0.6s ease-in-out;
+    z-index: 1;
+  }
+  
+  /* Анимация при наведении */
+  .Gmail-gradinet:hover::before {
+    opacity: 1; /* Полная видимость второго градиента */
+  }
+
+
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+.form {
+    --input-focus: #2d8cf0;
+    --font-color: #fefefe;
+    --font-color-sub: #7e7e7e;
+    --bg-color: #111;
+    --main-color: #fefefe;
+    padding: 20px;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+  }
+  
+  .title {
+    color: var(--font-color);
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .title span {
+    color: var(--font-color-sub);
+    font-weight: 600;
+    font-size: 17px;
+  }
+  
+  .input {
+    width: 100%; /* Занимает всю доступную ширину родителя */
+    height: auto; /* Высота будет зависеть от контента и padding */
+    min-height: 40px; /* Минимальная высота для удобства */
+    border-radius: 0.3rem; /* Относительное значение для скругления */
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 0.25rem 0.25rem var(--main-color); /* Относительное значение */
+    font-size: 1rem; /* Относительный размер шрифта */
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 0.5rem 1rem; /* Относительные значения для внутренних отступов */
+    outline: none;
+    box-sizing: border-box; /* Учитываем padding и border в размерах */
+  }
+  
+  .input::placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+    font-size: 1rem; /* Сохраняем тот же размер шрифта */
+  }
+  
+  .input:focus {
+    border: 2px solid var(--input-focus);
+  }
+
+  .login-with {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .button-log {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    color: var(--font-color);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--main-color);
+  }
+  
+  .button-log:active, .button-confirm:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+  }
+  
+  .button-confirm {
+    margin: 50px auto 0 auto;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+  }
+  
+.anec-container {
+    width: 20%;
+    margin: 0 auto; /* Центрирование по горизонтали */
+}
+
+.turt-img {
+    max-width: 50%; /* Ограничивает ширину изображения размером родительского контейнера */
+    height: auto;    /* Автоматически подстраивает высоту для сохранения пропорций */
+    display: block;  /* Убирает лишние отступы, если изображение внутри строки */
+    object-fit: cover;
+}
+
+.just-subtext {
+    font-size: calc(1.3rem + .6vw);
+}
+
+@media (max-width: 768px) {
+    .mobile-hide {
+        display: none;
+    }
+    .my-text-over {
+        top: 25%;
+        font-size: 1vw;
+    }
+    .bg-rectangle {
+        background: transparent;
+    }
+    .just-text {
+        font-size: 6vw;
+    }
+    .just-subtext {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .just-text {
+        font-size: 6vw;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .just-text {
+        font-size: 6vw;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .mobile-med-hide {
+        display: none;
+    }
+    .bg-rectangle {
+        background: transparent;
+    }
+    .just-text {
+        font-size: 6vw;
+    }
+    .just-subtext {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 320px) {
+    .mobile-min-hide {
+        display: none;
+    }
+    .bg-rectangle {
+        background: transparent;
+    }
+    .just-text {
+        font-size: 6vw;
+    }
+    .just-subtext {
+        font-size: 4vw;
+    }
+}
+
+.mob-show-container {
+    width: 300px;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 20px;
+    border: 4px solid #fff;
+}
+
+.mob-show-progress-bar {
+    height: 20px;
+    border-radius: 5px;
+}
+
+.mob-show-text {
+    margin-top: 5px;
+    text-align: left;
+}
+
+@media (min-width: 1024px) {
+    .mob-show-container {
+        display: none;
+    }
+}

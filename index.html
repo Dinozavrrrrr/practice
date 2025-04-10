@@ -1,0 +1,404 @@
+    <!DOCTYPE html>
+    <html lang="ru" class="bg-black">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Визитка</title>
+        <link rel="icon" type="image/x-icon" href="img/icon_logo.png">
+
+        <!-- Подключение CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="dist/css/bootstrap.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Шапка -->
+        <header class="fixed-top bg-transparent">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-blac bg-transparent">
+                <div class="container-fluid p-0 ">
+                    <!-- Логотип и текст -->
+                    <div class="d-flex align-items-center me-auto">
+                        <img src="img/icon_logo.png" alt="Логотип" class="logo me-3 ms-3">
+                        <p class="Irish-Grover text-white mb-0 fs-1">DINO</p>
+                    </div>
+
+                    <!-- Меню -->
+                    <!-- Кнопка для переключения меню -->
+                        <button class="menu-toggler" aria-label="Toggle navigation">
+                            <span class="menu-toggler-icon"></span>
+                        </button>
+
+                        <!-- Меню -->
+                        <div class="menu-collapse" id="menuNav">
+                            <ul class="menu-nav">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#about">Обо мне</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#skills">Навыки</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#portfolio">Портфолио</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#contacts">Контакты</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="#subscribe">Подписка</a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Основной контент -->
+        <main>
+            <div class="welcome">
+                <div class="container-fluid bg-black text-white py-5">
+                    <div class="row align-items-center gy-4">
+                        <!-- Левая колонка с текстом -->
+                        <div class="col-md-6 order-md-1 order-2">
+                            <div class="text-content my-text-over">
+                                <h1 class="just-text">Где зеленый цвет правит,</h1>
+                                <h1 class="just-text">а динозавры вдохновляют</h1>
+                                <p class="text-sudo-var just-subtext">Моя небольшая визитка</p>
+                            </div>
+                            <!-- Новая картинка слева -->
+                            <div class="new-image-left ms-5">
+                                <img src="img/Group 1.png" alt="Динозавр" class="img-fluid mobile-hide">
+                            </div>
+                        </div>
+            
+                        <!-- Правая колонка с изображением шара -->
+                        <div class="col-md-6 order-md-2 order-1 text-center">
+                            <img src="img/green-sphere.png" alt="Фотография" class="img-fluid sphere-image w-75">
+            
+                            <!-- Новая картинка справа -->
+                            <div class="new-image-right mt-2 mobile-hide">
+                                <img src="img/Снимок экрана 2025-03-31 223013-no-bg-preview (carve.photos) 1.png" alt="Пиксельный динозавр" class="img-fluid">
+                            </div>
+                            <hr class="border border-white border-3 opacity-100 m-0 mobile-hide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="container-fluid bg-black text-white m-0 p-0" id="about">
+                <h1 class="text-center about-text">Обо мне</h1>
+                <div class="row">
+                    <div class="col-2 position-relative d-flex flex-column">
+                        <img src="img/clown-pepe.png" alt="" class="w-75 mobile-hide">
+                        <img src="img/git-hub.jpg" alt="" class="w-50 position-absolute bottom-0 start-0 mobile-hide" style="margin: 0;">
+                    </div>
+                    <div class="col-6 d-flex flex-column p-0">
+                        <div class="border-end border-2 mt-auto d-flex justify-content-end border-end-0 mobile-hide" >
+                            <img src="img/Group 22.png" alt="whatsapp" class="mobile-hide border-top-0 border-start-0 border-end-0" style="border-style: dashed; border-color: #ffffff;">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="container">
+                            <div class="row">
+                                
+                                <div class="container mt-5">
+                                    <div class="row align-items-center">
+                                    <!-- Левая колонка для текста -->
+                                    <div class="col-md-8">
+                                        <h1 class="custom-title">Лютов Дамиан<br><small>(не негр)</small></h1>
+                                    </div>
+                                    <!-- Правая колонка для картинки -->
+                                    <div class="col-md-4">
+                                        <img src="img/white-cup.jpg" class="img-fluid rounded mobile-hide" alt="Пример картинки">
+                                    </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!-- Основное содержимое -->
+                            <div class="row">
+                                <div class="col-1 p-0">
+                                    <img src="img/icons8-game-96.png" alt="иконка игра" class="w-75">
+                                </div>
+                                <div class="col-11 p-0">
+                                    <h2 class="custom-subtitle">В игры игрокатель</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <dic class="col-1 p-0">
+                                    <img src="img/icons8-сеть-100.png" alt="иконка сайта" class="w-75">
+                                </dic>
+                                <div class="col-11 p-0">
+                                    <h2 class="custom-subtitle">Сайты делатель</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1 p-0">
+                                    <img src="img/icons8-стив-джампинг-дино-128.png" alt="иконка динозавра" class="w-75 image-">
+                                </div>
+                                <div class="col-11 p-0">
+                                    <h2 class="custom-subtitle">Амбоссадор лени</h2>
+                                    <h2 class="custom-subtitle">и квашеной лягушки</h2>
+                                </div>
+                            </div>
+                    
+                            <!-- Изображение -->
+                            <div class="custom-image-container">
+                                <img src="img/pokemon.png" alt="Изображение Pokemon" class="custom-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container-fluid bg-black text-white" id="skills">
+                <h1 class="text-center text-sudo-var" style="font-size: 5vw;">Навыки</h1>
+                <div class="row">
+                    <div class="col p-0 ms-5">
+                        <div class="container mt-5 p-0">
+                            <div class="chart-container mobile-hide">
+                                <!-- Первый столбец -->
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="bar bar-1" ></div>
+                                    <div class="label text-sudo-var">Болтливость</div>
+                                </div>
+                    
+                                <!-- Второй столбец -->
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="bar bar-2"></div>
+                                    <div class="label text-sudo-var">Интеллект</div>
+                                </div>
+                    
+                                <!-- Третий столбец -->
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="bar bar-3"></div>
+                                    <div class="label text-sudo-var">Игрозависимость</div>
+                                </div>
+                    
+                                <!-- Четвертый столбец -->
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="bar bar-4"></div>
+                                    <div class="label text-sudo-var">Хи-Хи</div>
+                                </div>
+                    
+                                <!-- Пятый столбец -->
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="bar bar-5"></div>
+                                    <div class="label text-sudo-var">Ха-Ха</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pe-3 text-center">
+                            <div class="container mob-show-container">
+                                <div class="mb-3">
+                                    <div class="progress">
+                                        <div class="progress-bar mob-show-progress-bar" role="progressbar" style="width: 90%; background-color: #9ACD32;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mob-show-text text-sudo-var">Болтливость</p>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="progress">
+                                        <div class="progress-bar mob-show-progress-bar" role="progressbar" style="width: 50%; background-color: #2E8B57;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mob-show-text text-sudo-var">Интеллект</p>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="progress">
+                                        <div class="progress-bar mob-show-progress-bar" role="progressbar" style="width: 100%; background-color: #074d2c;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mob-show-text text-sudo-var">Игрозависимость</p>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="progress">
+                                        <div class="progress-bar mob-show-progress-bar" role="progressbar" style="width: 88%; background-color: #2E8B57;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mob-show-text text-sudo-var">Хи-Хи</p>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="progress">
+                                        <div class="progress-bar mob-show-progress-bar" role="progressbar" style="width: 88%; background-color: #9ACD32;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mob-show-text text-sudo-var">Ха-Ха</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="container-fluid p-0">
+                                <!-- Контейнер для всего содержимого -->
+                                <div class="col-12 subject-container">
+                                    <!-- Заголовок -->
+                                    <h1 class="subject-title h3 text-sudo-var text-start">Данный субъект умеет:</h1>
+                                    <!-- Список с иконками звездочек -->
+                                        <ul class="subject-list">
+                                        <li class="subject-item text-sudo-var"><img src="img/icons8-пиксельная-звезда-100.png" alt="пиксельная звезда" class="w-5"></i> Отдыхать</li>
+                                        <li class="subject-item text-sudo-var"><img src="img/icons8-пиксельная-звезда-100.png" alt="пиксельная звезда" class="w-5"></i> Играть</li>
+                                        <li class="subject-item text-sudo-var"><img src="img/icons8-пиксельная-звезда-100.png" alt="пиксельная звезда" class="w-5"></i> Чучуть работать</li>
+                                        <li class="subject-item text-sudo-var"><img src="img/icons8-пиксельная-звезда-100.png" alt="пиксельная звезда" class="w-5"></i> Бла-бла-бла</li>
+                                        <li class="subject-item text-sudo-var"><img src="img/icons8-пиксельная-звезда-100.png" alt="пиксельная звезда" class="w-5"></i> Бле-бле-бле</li>
+                                        <li class="subject-item text-sudo-var"><img src="img/icons8-пиксельная-звезда-100.png" alt="пиксельная звезда" class="w-5"></i> Блу-блу-блу</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="text-sudo-var fs-5 text-center align-items-start">План на день</p>
+                            <div class="col p-0">
+                                <img src="img/dino-sword.png" alt="Динозаврик">
+                            </div>
+                            <div class="col">
+                                <!-- Первая картинка -->
+                                <div class="mb-0">
+                                    <img src="img/Arrow 1.png" alt="" class="w-10">
+                                </div>
+                                <!-- Вторая картинка -->
+                                <div>
+                                    <img src="img/plan.png" alt="план на день" class="w-50">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container-fluid bg-black text-white m-0 p-0 bg-rectangle pb-3" id="portfolio">
+                <h1 class="text-Sofia-Sans-Condensed text-center m-0" style="font-size: 5vw;">Портфолио</h1>
+                <div class="container">
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <div class="partfol-item">
+                                <div class="text-container me-5 pe-5">
+                                    <p class="fs-3 fw-semibold text-Sofia-Sans-Condensed">Ну вот типо дизайн</p>
+                                </div>
+                                <img src="img/figma_screen.png" class="partfol-image w-75 border-white">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="partfol-item d-flex justify-content-end align-items-end flex-column">
+                                <div class="text-container">
+                                    <img src="img/caterp.png" class="w-20 mobile-med-hide mobile-min-hide" style="justify-content: flex-start;">
+                                    <p class="fs-3 fw-semibold text-Sofia-Sans-Condensed">А это я типо пишу кот</p>
+                                    <p class="fs-5 text-Sofia-Sans-Condensed rotated-text mobile-med-hide mobile-min-hide">(Какой кот?)</p>
+                                </div>
+                                <img src="img/VSC_screen.png" class="partfol-image w-85 border-white">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-8">
+                            <div class="partfol-item">
+                                <div class="text-container">
+                                    <span class="fs-2 fw-semibold text-Sofia-Sans-Condensed me-2 mb-3">Чучут играю</span>
+                                    <span class="fs-5 text-Sofia-Sans-Condensed ml-3">(не чучут)</span>
+                                </div>
+                                <div class="text-container">
+                                    <img src="img/steam_screen.png" class="partfol-image w-75 border-white">
+                                    <img src="img/frog-car.png" class="w-10 p-0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-end align-items-end">
+                                <img src="img/Group 12.png" class="w-50 mobile-hide"> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container-fluid bg-black text-white" id="contacts">
+                <h1 class="text-sudo-var text-center mb-3" style="font-size: 4vw;">Контакты</h1>
+                <div class="con-container">
+                    <div class="row">
+                        <!-- Левая колонка -->
+                        <div class="col-12 col-md-6">
+                            <a class="con-card m-3 steam-gradinet" style="border: 8px solid #479124;" href="https://steamcommunity.com/profiles/76561199126621409/">
+                                <img src="img/steam.png" alt="Steam" style="z-index: 2;">
+                                <div style="z-index: 2;">
+                                    <p class="con-service-name text-sudo-var">Steam</p>
+                                </div>
+                            </a>
+                            <a class="con-card m-3 EGS-gradinet" style="border: 8px solid #15A456;" href="https://launcher.store.epicgames.com/u/c21eef0b903f4699b70c0af4e8f40510">
+                                <img src="img/EGS.png" alt="Epic Games Store" style="z-index: 2;">
+                                <div style="z-index: 2;">
+                                    <p class="con-service-name text-sudo-var">Epic Games Store</p>
+                                </div>
+                            </a>
+                            <a class="con-card m-3 TG-gradinet" style="border: 8px solid #60B82A;" href="https://t.me/dinozavrrr87">
+                                <img src="img/TG.png" alt="Telegram" style="z-index: 2;">
+                                <div style="z-index: 2;">
+                                    <p class="con-service-name text-sudo-var">Telegram</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Правая колонка -->
+                        <div class="col-12 col-md-6">
+                            <a class="con-card m-3 Discord-gradinet" style="border: 8px solid #00DF56;" href="https://discord.com/users/712228314278002750">
+                                <div style="z-index: 2;">
+                                    <p class="con-service-name text-sudo-var">Discord</p>
+                                    <p class="con-subtext text-sudo-var ">(Почти работает)</p>
+                                </div>
+                                <img src="img/Discord.png" alt="Discord" style="z-index: 2;">
+                            </a>
+                            <a class="con-card m-3 VK-gradinet" style="border: 8px solid #09CE09;" href="https://vk.com/dinozavrrrrrrrrrrrrrrrrrrrrrrrrr">
+                                <div style="z-index: 2;">
+                                    <p class="con-service-name text-sudo-var">ВКонтакте</p>
+                                </div>
+                                <img src="img/VK.png" alt="VKontakte" style="z-index: 2;">
+                            </a>
+                            <a class="con-card m-3 Gmail-gradinet" style="border: 8px solid #3EDA48;" href="https://damianlutov9@gmail.com/">
+                                <div style="z-index: 2;">
+                                    <p class="con-service-name text-sudo-var">Эл. Почта</p>
+                                </div>
+                                <img src="img/Gmail.png" alt="Gmail" style="z-index: 2;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container-fluid bg-black text-white" id="subscribe">
+                <h1 class="fw-semibold text-Sofia-Sans-Condensed text-center pb-3" style="font-size: 4.5vw;">Наш <span class="text-Sofia-Sans-Condensed fw-bold">УНИКАЛЬНЫЙ</span> сервис</h1>
+                <div class="row">
+                    <div class="col text-center align-items-center mobile-hide">
+                        <img src="img/Group 21.png" alt="арсен" class="w-15">
+                    </div>
+                    <div class="col p-0 m-0">
+                        <form class="form d-flex">
+                            <div class="title">Подписка<br><span>На анекдоты про грибы</span></div>
+                            <input class="input flex-fill" name="username" placeholder="Имя" type="Username">
+                            <input class="input" name="email" placeholder="Email" type="email">
+                            <input class="input" name="password" placeholder="Password" type="password">
+                            <button class="button-confirm">Вперёд →</button>
+                        </form>
+                    </div>
+                    <div class="col p-0 m-0 mobile-hide">
+                        <img src="img/turt.png" alt="черепёха">
+                    </div>
+                </div>
+            </section>
+            
+
+
+
+
+
+        </main>
+
+        <!-- Футер -->
+        <footer class="bg-black text-white text-center py-3">
+            <p>&copy; Лютов Дамиан 21ИСиП(В) 2025 Все права защищены радноверским судом ведающих славяно ариев из альфа центавры, по поводу связи обращаться к представителю скибиди туалетов пребывающем в моём чулане.</p>
+        </footer>
+
+        <!-- Подключение JS Bootstrap -->
+        <script src="dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const toggler = document.querySelector('.menu-toggler');
+                const menuCollapse = document.querySelector('.menu-collapse');
+    
+                toggler.addEventListener('click', () => {
+                    menuCollapse.classList.toggle('active');
+                });
+            });
+        </script>
+    </body>
+    </html>
